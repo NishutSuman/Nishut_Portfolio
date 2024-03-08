@@ -39,7 +39,7 @@ const Navbar = () => {
 		if (preScrollPos > currentScrollPos) {
 			navRef.current.style.top = '0';
 		} else {
-			navRef.current.style.top = '-80px';
+			navRef.current.style.top = '0';
 		}
 		setPreScrollPos(currentScrollPos);
 	};

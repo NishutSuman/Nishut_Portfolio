@@ -11,11 +11,12 @@ import About from '../About/About';
 import { projects } from '../../Utils/Projects';
 import Contact from '../Contact/Contact';
 import { ThemeContext } from '../../ContextProvider/ThemeContext';
-// import Experiences from '../Experiences/Experiences';
+// import Education from '../Education/Education';
+import Experiences from '../Experiences/Experiences';
 
 const Home = ({ scrollRef }) => {
 	const [projectArray, setProjectArray] = useState(
-		projects.slice(0, 4),
+		projects.slice(0, 2),
 	);
 	const { newTheme } = React.useContext(ThemeContext);
 	const [offset, setOffset] = useState(0);
@@ -110,7 +111,7 @@ const Home = ({ scrollRef }) => {
 					className={styles.profileImage}
 				>
 					<img
-						src='https://iili.io/U4PZqQ.png' //my Picture
+						src='https://i.postimg.cc/8cdnV8FP/profile-pic-1.png'
 						alt='Profile pic'
 					/>
 				</div>
@@ -126,6 +127,9 @@ const Home = ({ scrollRef }) => {
 				<About />
 			</div>
 
+			{/* <div id='education' className={styles.techStacks}>
+				<Education/>
+			</div> */}
 			<div id='techStacks' className={styles.techStacks}>
 				<TechStacks />
 			</div>
@@ -144,7 +148,7 @@ const Home = ({ scrollRef }) => {
 					data-aos-duration='700'
 					style={{ color: `${newTheme.para}` }}
 				>
-					{/* <Experiences /> */}
+					<Experiences />
 				</div>
 			</div>
 

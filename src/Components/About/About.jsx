@@ -1,7 +1,7 @@
-import React from 'react';
-import { ThemeContext } from '../../ContextProvider/ThemeContext';
+import React from "react";
+import { ThemeContext } from "../../ContextProvider/ThemeContext";
 // import WindowSize from '../../Utils/WindowSize';
-import styles from './About.module.css';
+import styles from "./About.module.css";
 
 const About = () => {
 	const { newTheme } = React.useContext(ThemeContext);
@@ -16,30 +16,32 @@ const About = () => {
 			style={{ boxShadow: `3px 3px 5px ${newTheme.line}` }}
 		>
 			<div className={styles.first}>
-				<img src={"https://github.com/himrd95/portfolio/blob/main/public/developer.gif?raw=true"} alt='' />
+				<img
+					src={
+						"https://github.com/himrd95/portfolio/blob/main/public/developer.gif?raw=true"
+					}
+					alt=""
+				/>
 			</div>
 			<div className={styles.second}>
-				<h1
-					style={{ color: `${newTheme.title}` }}
-					className={styles.heading}
-				>
+				<h1 style={{ color: `${newTheme.title}` }} className={styles.heading}>
 					About Me
 				</h1>
 				<div className={styles.borderBottom} />
-				<p
-					style={{ color: `${newTheme.para}` }}
-					className={styles.aboutMe}
-				>
-
-					Hi Everyone! I am Nishut Suman Mahunta. I always believe that direction is far more important than speed. Keeping that in mind and understanding my inner self and where the world is heading, I decided to make a pivot in my career to become a software developer. <br />
-					I love to be involved with technology and I have a desire to build web applications that can impact millions of life positively.  	 <br />
-					.
-					At Masai School in the last 7 months, I built a number of web applications using the MERN stack and developed key projects in it. I have also inculcated the skills like teamwork, leadership, empathy, compassion, and communication. 
-					After months
-					of rigorous training, here I am
+				<p style={{ color: `${newTheme.para}` }} className={styles.aboutMe}>
+					Hi Everyone! 👋 A passionate MERN (MongoDB, Express.js, React.js,
+					Node.js) developer on a mission to craft powerful and user-friendly
+					web applications. My GitHub is a collection of projects and code
+					snippets that showcase my expertise in building full-stack solutions
+					using the MERN stack. In addition to my MERN proficiency, I bring
+					valuable experience in software testing with Jest, Cypress and
+					CypressSatteful. I honed my skills in developing robust and scalable
+					MERN applications while ensuring top-notch quality through efficient
+					testing.
+					<br />
 					<span style={{ color: `#00a0a0` }}>
-						{' '}
-						looking for an opportunity as a full stack web developer
+						{" "}
+						I believe in staying up-to-date with the latest trends and continuously honing my skills. Currently, I'm diving deeper into Flutter, Angular and exploring ways to optimize application performance. Also I am eagerly learning Product Management and applying it's basic in my day to day coding life.
 					</span>
 					.
 				</p>
